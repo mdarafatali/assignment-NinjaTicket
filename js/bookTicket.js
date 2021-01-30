@@ -37,8 +37,7 @@ function classHandler(classType, isIncrease){
     if (classType == "economy"){
         document.getElementById('sub-Total2').innerText ='$' + totalClassCount *  100;
     }
-    calculateSubTotal();
-    
+    calculateSubTotal();  
 }
 // classHandler function end
 
@@ -66,7 +65,6 @@ function getInputValue(classType){
     const classInput = document.getElementById(classType +'-Class-Count');
     const classCount = parseInt(classInput.value);
     return classCount;
-
 }
 
 // getInputValue function end
