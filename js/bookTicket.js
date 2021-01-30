@@ -30,14 +30,13 @@ function classHandler(classType, isIncrease){
     
     if (classType == "first"){
 
-        Total = totalClassCount *  150;
+        document.getElementById('sub-Total1').innerText ='$' + totalClassCount *  150;
       
     }
 
     if (classType == "economy"){
-        Total = totalClassCount *  100;
+        document.getElementById('sub-Total2').innerText ='$' + totalClassCount *  100;
     }
-    document.getElementById('sub-Total').innerText  = '$' + Total;
     calculateSubTotal();
     
 }
